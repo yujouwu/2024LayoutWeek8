@@ -16,5 +16,9 @@ $utilities: map-merge(
       map-get($utilities, "font-weight"),
       ( responsive: true ),
     ),
+    "overflow": map-merge(
+      map-get($utilities, "overflow"),
+      ( responsive: true ),
+    ),
   )
 );

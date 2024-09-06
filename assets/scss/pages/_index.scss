@@ -7,25 +7,25 @@
 .tab-item{
   
 }
-.carousel-item img{
-  height: 400px;
-  object-fit: cover;
-}
-.carousel-indicators{
-  & [data-bs-target] {
-    border: 0;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-  }
-  .active{
-    background-color: $primary;
-    width: 24px;
-    height: 8px;
-    border-radius: 100px;
-  }
-}
-.heroSwiper{
+// .carousel-item img{
+//   height: 400px;
+//   object-fit: cover;
+// }
+// .carousel-indicators{
+//   & [data-bs-target] {
+//     border: 0;
+//     width: 8px;
+//     height: 8px;
+//     border-radius: 50%;
+//   }
+//   .active{
+//     background-color: $primary;
+//     width: 24px;
+//     height: 8px;
+//     border-radius: 100px;
+//   }
+// }
+.hero-swiper{
   @include media-breakpoint-up(md){
     margin-bottom: 72px;
   }
@@ -59,15 +59,6 @@
     object-fit: cover;
     width: 100%;
 
-  }
-  .swiper-pagination-bullet{
-    background-color: $neutral-40;
-    &-active{
-      background: $primary;
-      width: 24px;
-      height: 8px;
-      border-radius: 100px;
-    }
   }
   .swiper-button-prev,
   .swiper-button-next{
@@ -120,5 +111,20 @@
   &-type{
     overflow-x: auto;
     white-space: nowrap;
+  }
+  &-swiper{
+    overflow: visible;
+  }
+}
+.bg-gradient-primary{
+  background-image: linear-gradient(to bottom, #F0F6FF, #FFFFFF);
+}
+.swiper-pagination-bullet{
+  background-color: $neutral-40;
+  &-active{
+    background: $primary;
+    width: 24px;
+    height: 8px;
+    border-radius: 100px;
   }
 }
