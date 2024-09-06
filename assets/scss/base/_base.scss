@@ -1,0 +1,27 @@
+*, *::before, *::after{
+  // outline: 1px solid red;
+}
+body{
+  letter-spacing: 0.02em;
+}
+ol, ul {
+  margin-bottom: 0;
+}
+img{
+  vertical-align: bottom;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  vertical-align: middle;
+}
+.icon-filled{
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}

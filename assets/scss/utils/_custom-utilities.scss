@@ -1,0 +1,20 @@
+$utilities: map-merge(
+  $utilities, (
+    "rounded": map-merge(
+      map-get($utilities, "rounded"),
+      ( responsive: true ),
+    ),
+    "shadow": map-merge(
+      map-get($utilities, "shadow"),
+      ( responsive: true ),
+    ),
+    "font-size": map-merge(
+      map-get($utilities, "font-size"),
+      ( responsive: true ),
+    ),
+    "font-weight": map-merge(
+      map-get($utilities, "font-weight"),
+      ( responsive: true ),
+    ),
+  )
+);

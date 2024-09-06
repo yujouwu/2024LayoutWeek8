@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <!--Hero Swiper -->
+    <div class="swiper heroSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="../assets/images/hero-1.png" alt="hero-1">
+            <h2 class="swiper-slide-title">探索感興趣的課程，今天立即上課<span
+                class="material-symbols-outlined fs-7 fs-md-2 ms-3">arrow_forward</span></h2>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="../assets/images/hero-2.png" alt="hero-2">
+            <h2 class="swiper-slide-title">探索感興趣的課程，今天立即上課<span
+                class="material-symbols-outlined fs-7 fs-md-2 ms-3">arrow_forward</span></h2>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="../assets/images/hero-3.png" alt="hero-3">
+            <h2 class="swiper-slide-title">探索感興趣的課程，今天立即上課<span
+                class="material-symbols-outlined fs-7 fs-md-2 ms-3">arrow_forward</span></h2>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="../assets/images/hero-4.png" alt="hero-4">
+            <h2 class="swiper-slide-title">探索感興趣的課程，今天立即上課<span
+                class="material-symbols-outlined fs-7 fs-md-2 ms-3">arrow_forward</span></h2>
+          </a>
+        </div>
+      </div>
+      <div class="swiper-button-next d-none d-md-flex"></div>
+      <div class="swiper-button-prev d-none d-md-flex"></div>
+      <div class="swiper-pagination d-md-none mb-12"></div>
+    </div>
+    <!-- 火熱募資課程 -->
+    <section class="fundraising-course container">
+      <div class="row">
+        <div class="col-xl-4">
+          <h3 class="h2 fw-md-semibold">火熱募資課程</h3>
+          <p>現在購買最優惠✨</p>
+          <ul class="fundraising-course-type list-unstyled d-flex gap-2 flex-lg-wrap gap-lg-3">
+            <li>
+              <input type="radio" class="btn-check" name="fundraising-course" id="btn-check-1" autocomplete="off"
+                checked>
+              <label class="btn btn-outline-primary btn-sm" for="btn-check-1">全部</label><br>
+            </li>
+            <li>
+              <input type="radio" class="btn-check" name="fundraising-course" id="btn-check-2" autocomplete="off">
+              <label class="btn btn-outline-primary btn-sm" for="btn-check-2">🍽️ 烹飪料理</label><br>
+            </li>
+            <li>
+              <input type="radio" class="btn-check" name="fundraising-course" id="btn-check-3" autocomplete="off">
+              <label class="btn btn-outline-primary btn-sm" for="btn-check-3">📊 數據分析</label><br>
+            </li>
+            <li>
+              <input type="radio" class="btn-check" name="fundraising-course" id="btn-check-4" autocomplete="off">
+              <label class="btn btn-outline-primary btn-sm" for="btn-check-4">🎼 音樂製作</label><br>
+            </li>
+            <li>
+              <input type="radio" class="btn-check" name="fundraising-course" id="btn-check-5" autocomplete="off">
+              <label class="btn btn-outline-primary btn-sm" for="btn-check-5">📝 創意寫作</label><br>
+            </li>
+            <li>
+              <input type="radio" class="btn-check" name="fundraising-course" id="btn-check-6" autocomplete="off">
+              <label class="btn btn-outline-primary btn-sm" for="btn-check-6">💬 語言學習</label><br>
+            </li>
+            <li>
+              <input type="radio" class="btn-check" name="fundraising-course" id="btn-check-8" autocomplete="off">
+              <label class="btn btn-outline-primary btn-sm" for="btn-check-8">🖌️ 藝術創作</label><br>
+            </li>
+          </ul>
+          <button class="btn btn-primary btn-sm d-none d-lg-block mt-lg-9" type="button">更多募資課程</button>
+        </div>
+        <div class="col-xl-8">
+          <!-- 募資課程 Swiper -->
+          <div class="swiper fundraising-course-swiper">
+            <div class="swiper-wrapper">
+              <!-- slide 1 -->
+              <div class="swiper-slide">
+                <a href="#" class="text-decoration-none">
+                  <div class="card">
+                    <img src="../assets/images/course-1.png" class="card-img-top" alt="course-1">
+                    <span class="bg-primary-10 text-primary rounded-pill py-1 px-2 position-absolute top-0 start-0 m-4">優惠倒數 10 天</span>
+                    <div class="card-body p-6">
+                      <h6 class="card-title">創意寫作工坊：從靈感到出版的全過程</h6>
+                      <div class="d-flex align-items-center mb-6">
+                        <img class="avatar" src="../assets/images/avatar-1.png" alt="avatar-1">
+                        <h4 class="fs-7 fw-normal">Kelly Hsu</h4>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center mb-2">
+                        <p class="card-text">募資進度 81 %</p>
+                        <p class="text-neutral-80 fs-8">已有 521 位同學加入</p>
+                      </div>
+                      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 81%"></div>
+                      </div>
+                      <div class="d-flex align-items-center gap-2">
+                        <h6>NT$ 2,480</h6>
+                        <span>NT$ 3,200</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- slide 2 -->
+              <div class="swiper-slide">
+                <a href="#" class="text-decoration-none">
+                  <div class="card">
+                    <img src="../assets/images/course-1.png" class="card-img-top" alt="...">
+                    <span class="bg-primary-10 text-primary rounded-pill py-1 px-2 position-absolute top-0 start-0 m-4">優惠倒數 17 天</span>
+                    <div class="card-body p-6">
+                      <h6 class="card-title">健康廚房：營養均衡的素食料理指南</h6>
+                      <div class="d-flex align-items-center mb-6">
+                        <img class="avatar" src="../assets/images/avatar-2.png" alt="">
+                        <h4 class="fs-7 fw-normal">希姐帶你吃</h4>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center mb-2">
+                        <p class="card-text">募資進度 281 %</p>
+                        <p class="text-neutral-80 fs-8">已有 1,397 位同學加入</p>
+                      </div>
+                      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="281" aria-valuemin="0" aria-valuemax="281">
+                        <div class="progress-bar" style="width: 281%"></div>
+                      </div>
+                      <div class="d-flex align-items-center gap-2">
+                        <h6>NT$ 1,680</h6>
+                        <span>NT$ 2,980</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- slide 3 -->
+              <div class="swiper-slide">
+                <a href="#" class="text-decoration-none">
+                  <div class="card">
+                    <img src="../assets/images/course-3.png" class="card-img-top" alt="course-3">
+                    <span class="bg-primary-10 text-primary rounded-pill py-1 px-2 position-absolute top-0 start-0 m-4">優惠倒數 9 天</span>
+                    <div class="card-body p-6">
+                      <h6 class="card-title">音樂製作入門：從零開始創作你的音樂</h6>
+                      <div class="d-flex align-items-center mb-6">
+                        <img class="avatar" src="../assets/images/avatar-3.png" alt="avatar-3">
+                        <h4 class="fs-7 fw-normal">K.Dee</h4>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center mb-2">
+                        <p class="card-text">募資進度 76 %</p>
+                        <p class="text-neutral-80 fs-8">已有 420 位同學加入</p>
+                      </div>
+                      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="76" aria-valuemin="0" aria-valuemax="76">
+                        <div class="progress-bar" style="width: 76%"></div>
+                      </div>
+                      <div class="d-flex align-items-center gap-2">
+                        <h6>NT$ 2,680</h6>
+                        <span>NT$ 3,200</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- slide 4 -->
+              <div class="swiper-slide">
+                <a href="#" class="text-decoration-none">
+                  <div class="card">
+                    <img src="../assets/images/course-4.png" class="card-img-top" alt="course-4">
+                    <span class="bg-primary-10 text-primary rounded-pill py-1 px-2 position-absolute top-0 start-0 m-4">優惠倒數 1 天</span>
+                    <div class="card-body p-6">
+                      <h6 class="card-title">掌握商業攝影：打造你的專業攝影事業</h6>
+                      <div class="d-flex align-items-center mb-6">
+                        <img class="avatar" src="../assets/images/avatar-4.png" alt="avatar-4">
+                        <h4 class="fs-7 fw-normal">Mikeeee</h4>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center mb-2">
+                        <p class="card-text">募資進度 98 %</p>
+                        <p class="text-neutral-80 fs-8">已有 290 位同學加入</p>
+                      </div>
+                      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="98" aria-valuemin="0" aria-valuemax="98">
+                        <div class="progress-bar" style="width: 98%"></div>
+                      </div>
+                      <div class="d-flex align-items-center gap-2">
+                        <h6>NT$ 1,980</h6>
+                        <span>NT$ 3,200</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+    </section>
+    
+
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        // heroSwiper
+        var swiper = new Swiper(".heroSwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          initialSlide: 1,
+          loop: "true",
+
+          breakpoints: {
+            768: {
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              spaceBetween: 40,
+              slidesPerView: 1.1,
+              centeredSlides: true,
+            },
+          }
+        });
+        // 募資課程
+        var swiper = new Swiper(".fundraising-course-swiper", {
+          slidesPerView: 1.1,
+          spaceBetween: 24,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          loop: "true",
+          grid: {
+            rows: 1,
+            fill: 'row',
+          },
+          breakpoints: {
+            768: {
+              slidesPerView: 2,
+            },
+            992: {
+              slidesPerView: 2,
+              grid: {
+                rows: 2,
+              },
+            },
+          }
+        });
+      </script>
+</body>
+
+</html>

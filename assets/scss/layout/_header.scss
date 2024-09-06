@@ -1,0 +1,92 @@
+.badge-number{
+  font-size: 8px;
+}
+.navbar-brand{
+  width: 125px;
+  @include media-breakpoint-up(lg){
+    width: 200px;
+  }
+}
+header .form-control {
+  @include media-breakpoint-up(lg){
+    width: 425px;
+  }
+}
+header .dropdown-toggle::after{
+  content: "\F282";
+  font-family: "Bootstrap-icons";
+  border: none;
+  vertical-align: middle;
+}
+header .dropdown-item{
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 24px;
+  border-radius: 12px;
+  &:not(.dropdown-item-all){
+    &::after{
+      content: "\e5cc";
+      font-family: "Material Symbols Outlined";
+      border: none;
+    }
+    &:hover{
+      background: $primary;
+      color: white;
+    }
+  }
+}
+.desktop-nav-dropdown-menu{
+  width: 100%;
+  max-width: 863px;
+  border-radius: 12px;
+  overflow: hidden;
+  &[data-bs-popper]{
+    left: 15%;
+  }
+  .dropdown-menu{
+    &-level-one{
+      background: $neutral-10;
+    }
+    &-level-one,
+    &-level-two{
+      padding: 12px 12px 4px;
+      width: 26%;
+    }
+    &-level-three{
+      padding: 12px 24px 4px;
+      width: 48%;
+    }
+    &-level-one,
+    &-level-two,
+    &-level-three{
+      max-height: 600px;
+      height: calc(100vh - 200px);
+      overflow-y: scroll;
+    }
+    
+  } 
+}
+.mobile-nav-dropdown-menu{
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+  position: relative;
+  .dropdown-menu{
+    &-level-one{
+      padding: 12px 24px;
+      overflow-y: scroll;
+    }
+    &-level-two{
+      padding-left: 24px;
+      padding-right: 24px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+.icon-star{
+  color: #F6BD2B;
+  font-size: 12px;
+}
