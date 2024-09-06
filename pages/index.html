@@ -11,48 +11,50 @@
 <body>
   <%- include('./layout/header'); -%>
     <!--Hero Swiper -->
-    <div class="swiper hero-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <a href="#">
-            <img src="../assets/images/hero-1.png" alt="hero-1">
-            <h2 class="swiper-slide-title">探索感興趣的課程，今天立即上課<span
-                class="material-symbols-outlined fs-7 fs-md-2 ms-3">arrow_forward</span></h2>
-          </a>
+    <section class="hero">
+      <div class="swiper hero-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="../assets/images/hero-1.png" alt="hero-1">
+              <h2 class="swiper-slide-title">探索感興趣的課程，今天立即上課<span
+                  class="material-symbols-outlined fs-7 fs-md-2 ms-3">arrow_forward</span></h2>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="../assets/images/hero-2.png" alt="hero-2">
+              <h2 class="swiper-slide-title">探索感興趣的課程，今天立即上課<span
+                  class="material-symbols-outlined fs-7 fs-md-2 ms-3">arrow_forward</span></h2>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="../assets/images/hero-3.png" alt="hero-3">
+              <h2 class="swiper-slide-title">探索感興趣的課程，今天立即上課<span
+                  class="material-symbols-outlined fs-7 fs-md-2 ms-3">arrow_forward</span></h2>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="../assets/images/hero-4.png" alt="hero-4">
+              <h2 class="swiper-slide-title">探索感興趣的課程，今天立即上課<span
+                  class="material-symbols-outlined fs-7 fs-md-2 ms-3">arrow_forward</span></h2>
+            </a>
+          </div>
         </div>
-        <div class="swiper-slide">
-          <a href="#">
-            <img src="../assets/images/hero-2.png" alt="hero-2">
-            <h2 class="swiper-slide-title">探索感興趣的課程，今天立即上課<span
-                class="material-symbols-outlined fs-7 fs-md-2 ms-3">arrow_forward</span></h2>
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="#">
-            <img src="../assets/images/hero-3.png" alt="hero-3">
-            <h2 class="swiper-slide-title">探索感興趣的課程，今天立即上課<span
-                class="material-symbols-outlined fs-7 fs-md-2 ms-3">arrow_forward</span></h2>
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="#">
-            <img src="../assets/images/hero-4.png" alt="hero-4">
-            <h2 class="swiper-slide-title">探索感興趣的課程，今天立即上課<span
-                class="material-symbols-outlined fs-7 fs-md-2 ms-3">arrow_forward</span></h2>
-          </a>
-        </div>
+        <div class="swiper-button-next d-none d-md-flex"></div>
+        <div class="swiper-button-prev d-none d-md-flex"></div>
+        <div class="swiper-pagination d-md-none mb-12"></div>
       </div>
-      <div class="swiper-button-next d-none d-md-flex"></div>
-      <div class="swiper-button-prev d-none d-md-flex"></div>
-      <div class="swiper-pagination d-md-none mb-12"></div>
-    </div>
+    </section>
     <!-- 火熱募資課程 -->
     <section class="fundraising-course container py-13 py-lg-15">
       <div class="row">
         <div class="col-xl-4 pt-lg-15">
           <h3 class="h2 fw-md-semibold mt-lg-9 mb-2">火熱募資課程</h3>
           <p class="mb-2 mb-lg-9">現在購買最優惠✨</p>
-          <ul class="fundraising-course-type list-unstyled d-flex gap-2 flex-lg-wrap gap-lg-3">
+          <ul class="fundraising-course-type list-unstyled d-flex gap-2 flex-lg-wrap gap-lg-3 mb-6">
             <li>
               <input type="radio" class="btn-check" name="fundraising-course" id="btn-check-1" autocomplete="off"
                 checked>
@@ -85,17 +87,19 @@
           </ul>
           <button class="btn btn-primary btn-sm d-none d-lg-block mt-lg-9" type="button">更多募資課程</button>
         </div>
-        <div class="col-xl-8">
+        <div class="col-xl-8 overflow-x-hidden overflow-lg-visible">
           <!-- 募資課程 Swiper -->
           <div class="position-relative">
-            <div class="swiper fundraising-course-swiper">
+            <div class="swiper fundraising-course-swiper overflow-visible">
               <div class="swiper-wrapper">
                 <!-- slide 1 -->
                 <div class="swiper-slide">
                   <a href="#" class="text-decoration-none">
                     <div class="card">
                       <img src="../assets/images/course-1.png" class="card-img-top" alt="course-1">
-                      <span class="bg-primary-10 text-primary rounded-pill py-1 px-2 position-absolute top-0 start-0 m-4">優惠倒數 10 天</span>
+                      <span
+                        class="badge badge-primary">優惠倒數
+                        10 天</span>
                       <div class="card-body p-6">
                         <h6 class="card-title">創意寫作工坊：從靈感到出版的全過程</h6>
                         <div class="d-flex align-items-center mb-6">
@@ -106,7 +110,8 @@
                           <p class="card-text">募資進度 81 %</p>
                           <p class="text-neutral-80 fs-8">已有 521 位同學加入</p>
                         </div>
-                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100"
+                          aria-valuemin="0" aria-valuemax="100">
                           <div class="progress-bar" style="width: 81%"></div>
                         </div>
                         <div class="d-flex align-items-center gap-2">
@@ -121,8 +126,10 @@
                 <div class="swiper-slide">
                   <a href="#" class="text-decoration-none">
                     <div class="card">
-                      <img src="../assets/images/course-1.png" class="card-img-top" alt="...">
-                      <span class="bg-primary-10 text-primary rounded-pill py-1 px-2 position-absolute top-0 start-0 m-4">優惠倒數 17 天</span>
+                      <img src="../assets/images/course-2.png" class="card-img-top" alt="...">
+                      <span
+                        class="badge badge-primary">優惠倒數
+                        17 天</span>
                       <div class="card-body p-6">
                         <h6 class="card-title">健康廚房：營養均衡的素食料理指南</h6>
                         <div class="d-flex align-items-center mb-6">
@@ -133,7 +140,8 @@
                           <p class="card-text">募資進度 281 %</p>
                           <p class="text-neutral-80 fs-8">已有 1,397 位同學加入</p>
                         </div>
-                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="281" aria-valuemin="0" aria-valuemax="281">
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="281"
+                          aria-valuemin="0" aria-valuemax="281">
                           <div class="progress-bar" style="width: 281%"></div>
                         </div>
                         <div class="d-flex align-items-center gap-2">
@@ -149,7 +157,9 @@
                   <a href="#" class="text-decoration-none">
                     <div class="card">
                       <img src="../assets/images/course-3.png" class="card-img-top" alt="course-3">
-                      <span class="bg-primary-10 text-primary rounded-pill py-1 px-2 position-absolute top-0 start-0 m-4">優惠倒數 9 天</span>
+                      <span
+                        class="badge badge-primary">優惠倒數
+                        9 天</span>
                       <div class="card-body p-6">
                         <h6 class="card-title">音樂製作入門：從零開始創作你的音樂</h6>
                         <div class="d-flex align-items-center mb-6">
@@ -160,7 +170,8 @@
                           <p class="card-text">募資進度 76 %</p>
                           <p class="text-neutral-80 fs-8">已有 420 位同學加入</p>
                         </div>
-                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="76" aria-valuemin="0" aria-valuemax="76">
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="76"
+                          aria-valuemin="0" aria-valuemax="76">
                           <div class="progress-bar" style="width: 76%"></div>
                         </div>
                         <div class="d-flex align-items-center gap-2">
@@ -176,7 +187,9 @@
                   <a href="#" class="text-decoration-none">
                     <div class="card">
                       <img src="../assets/images/course-4.png" class="card-img-top" alt="course-4">
-                      <span class="bg-primary-10 text-primary rounded-pill py-1 px-2 position-absolute top-0 start-0 m-4">優惠倒數 1 天</span>
+                      <span
+                        class="badge badge-primary">優惠倒數
+                        1 天</span>
                       <div class="card-body p-6">
                         <h6 class="card-title">掌握商業攝影：打造你的專業攝影事業</h6>
                         <div class="d-flex align-items-center mb-6">
@@ -187,7 +200,8 @@
                           <p class="card-text">募資進度 98 %</p>
                           <p class="text-neutral-80 fs-8">已有 290 位同學加入</p>
                         </div>
-                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="98" aria-valuemin="0" aria-valuemax="98">
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="98"
+                          aria-valuemin="0" aria-valuemax="98">
                           <div class="progress-bar" style="width: 98%"></div>
                         </div>
                         <div class="d-flex align-items-center gap-2">
@@ -206,13 +220,381 @@
         </div>
     </section>
     <!-- 看看大家都買了什麼 -->
-    <section class="bg-gradient-primary py-15">
+    <section class="popular bg-gradient-primary py-15">
       <div class="container">
-        <h3 class="h2 fw-md-semibold mt-lg-9">看看大家都買了什麼</h3>
-        <p>熱銷課程一次看！✨</p>
+        <div class="text-lg-center mb-6 mb-lg-9">
+          <h3 class="h2 fw-md-semibold mt-lg-9 mb-2"><span class="title-deco z-0">看看大家都買了什麼</span></h3>
+          <p>熱銷課程一次看！✨</p>
+        </div>
+        <div class="row">
+          <div class="col position-relative">
+            <!-- popular Swiper -->
+            <div class="swiper popular-swiper">
+              <div class="swiper-wrapper">
+                <!-- popular slide 1 -->
+                <div class="swiper-slide">
+                  <a href="#" class="text-decoration-none">
+                    <div class="card">
+                      <img src="../assets/images/course-1.png" class="card-img-top" alt="course-1">
+                      <span class="badge badge-danger">限時 8 折 🔥</span>
+                      <div class="card-body p-4">
+                        <h6 class="card-title">創意寫作工坊：從靈感到出版的全過程</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="d-flex align-items-center">
+                            <img class="avatar" src="../assets/images/avatar-1.png" alt="avatar-1">
+                            <h4 class="fs-7 fw-normal">Kelly Hsu</h4>
+                          </div>
+                          <div class="text-end">
+                            <h6 class="text-primary">NT$ 2,480</h6>
+                            <span>NT$ 3,200</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer d-flex align-items-center justify-content-between fs-8 p-4">
+                        <div>
+                          <span class="badge text-bg-neutral-40 position-static m-0 mb-1">中文創作</span>
+                          <p class="text-neutral-80 fs-8">已有 521 位同學加入</p>
+                        </div>
+                        <p class="d-flex align-items-center gap-1">
+                          <span class="material-symbols-outlined icon-filled icon-star">star</span>
+                          <span class="text-black fw-medium">4.0</span>
+                          <span>(333)</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- popular slide 2 -->
+                <div class="swiper-slide">
+                  <a href="#" class="text-decoration-none">
+                    <div class="card">
+                      <img src="../assets/images/course-5.png" class="card-img-top" alt="course-5">
+                      <span class="badge badge-danger">限時 8 折 🔥</span>
+                      <div class="card-body p-4">
+                        <h6 class="card-title">小白也會！從零開始學習 Python 程式設計</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="d-flex align-items-center">
+                            <img class="avatar" src="../assets/images/avatar-1.png" alt="avatar-1">
+                            <h4 class="fs-7 fw-normal">Kelly Hsu</h4>
+                          </div>
+                          <div class="text-end">
+                            <h6 class="text-primary">NT$ 2,480</h6>
+                            <span>NT$ 3,200</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer d-flex align-items-center justify-content-between fs-8 p-4">
+                        <div>
+                          <span class="badge text-bg-neutral-40 position-static m-0 mb-1">程式開發</span>
+                          <p class="text-neutral-80 fs-8">已有 420 位同學加入</p>
+                        </div>
+                        <p class="d-flex align-items-center gap-1">
+                          <span class="material-symbols-outlined icon-filled icon-star">star</span>
+                          <span class="text-black fw-medium">4.0</span>
+                          <span>(333)</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- popular slide 3 -->
+                <div class="swiper-slide">
+                  <a href="#" class="text-decoration-none">
+                    <div class="card">
+                      <img src="../assets/images/course-6.png" class="card-img-top" alt="course-6">
+                      <span class="badge badge-danger">限時 8 折 🔥</span>
+                      <div class="card-body p-4">
+                        <h6 class="card-title">全面掌握 JavaScript 開發技術</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="d-flex align-items-center">
+                            <img class="avatar" src="../assets/images/avatar-1.png" alt="avatar-1">
+                            <h4 class="fs-7 fw-normal">Kelly Hsu</h4>
+                          </div>
+                          <div class="text-end">
+                            <h6 class="text-primary">NT$ 2,480</h6>
+                            <span>NT$ 3,200</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer d-flex align-items-center justify-content-between fs-8 p-4">
+                        <div>
+                          <span class="badge text-bg-neutral-40 position-static m-0 mb-1">程式開發</span>
+                          <p class="text-neutral-80 fs-8">已有 420 位同學加入</p>
+                        </div>
+                        <p class="d-flex align-items-center gap-1">
+                          <span class="material-symbols-outlined icon-filled icon-star">star</span>
+                          <span class="text-black fw-medium">4.0</span>
+                          <span>(333)</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- popular slide 4 -->
+                <div class="swiper-slide">
+                  <a href="#" class="text-decoration-none">
+                    <div class="card">
+                      <img src="../assets/images/course-7.png" class="card-img-top" alt="course-7">
+                      <div class="card-body p-4">
+                        <h6 class="card-title">HTML & CSS 網頁設計基礎教程</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="d-flex align-items-center">
+                            <img class="avatar" src="../assets/images/avatar-1.png" alt="avatar-1">
+                            <h4 class="fs-7 fw-normal">Kelly Hsu</h4>
+                          </div>
+                          <div class="text-end">
+                            <h6 class="text-primary">NT$ 2,480</h6>
+                            <span>NT$ 3,200</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer d-flex align-items-center justify-content-between fs-8 p-4">
+                        <div>
+                          <span class="badge text-bg-neutral-40 position-static m-0 mb-1">程式開發</span>
+                          <p class="text-neutral-80 fs-8">已有 420 位同學加入</p>
+                        </div>
+                        <p class="d-flex align-items-center gap-1">
+                          <span class="material-symbols-outlined icon-filled icon-star">star</span>
+                          <span class="text-black fw-medium">4.0</span>
+                          <span>(333)</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- popular slide 5 -->
+                <div class="swiper-slide">
+                  <a href="#" class="text-decoration-none">
+                    <div class="card">
+                      <img src="../assets/images/course-8.png" class="card-img-top" alt="course-8">
+                      <div class="card-body p-4">
+                        <h6 class="card-title">更進一步！深入學習 Node.js 與後端開發</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="d-flex align-items-center">
+                            <img class="avatar" src="../assets/images/avatar-1.png" alt="avatar-1">
+                            <h4 class="fs-7 fw-normal">Kelly Hsu</h4>
+                          </div>
+                          <div class="text-end">
+                            <h6 class="text-primary">NT$ 2,480</h6>
+                            <span>NT$ 3,200</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer d-flex align-items-center justify-content-between fs-8 p-4">
+                        <div>
+                          <span class="badge text-bg-neutral-40 position-static m-0 mb-1">程式開發</span>
+                          <p class="text-neutral-80 fs-8">已有 420 位同學加入</p>
+                        </div>
+                        <p class="d-flex align-items-center gap-1">
+                          <span class="material-symbols-outlined icon-filled icon-star">star</span>
+                          <span class="text-black fw-medium">4.0</span>
+                          <span>(333)</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next d-none d-lg-flex"></div>
+            <div class="swiper-button-prev d-none d-lg-flex"></div>
+          </div>
+        </div>
       </div>
     </section>
-
+    <!-- 一探究竟 -->
+    <section class="explore my-9 m-xxl-14">
+      <div class="container">
+        <div class="row flex-lg-row-reverse align-items-lg-center justify-content-lg-between">
+          <div class="col-lg-5 mb-9 m-lg-0 d-lg-flex">
+            <div>
+              <img src="../assets/images/deco/polygon-1.png" alt="polygon-1">
+            </div>
+            <div>
+              <h3 class="h1">想學什麼嗎？</h3>
+              <h3 class="h1">一探究竟。</h3>
+              <img src="../assets/images/deco/line-2.png" class="img-fluid" alt="line-2">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <!-- 一探究竟 Swiper -->
+            <div class="swiper explore-swiper">
+              <div class="swiper-wrapper">
+                <!-- slide 1 -->
+                <div class="swiper-slide">
+                  <a href="#" class="explore-link">
+                    <img src="../assets/images/icons/megaphoneSimple.png" class="p-4 rounded-4"
+                      style="background-color: #FF994F;" alt="megaphoneSimple icon">
+                    <div>
+                      <p class="explore-title">網路行銷</p>
+                      <span class="fs-8">342 門課程</span>
+                    </div>
+                  </a>
+                </div>
+                <!-- slide 2 -->
+                <div class="swiper-slide">
+                  <a href="#" class="explore-link">
+                    <img src="../assets/images/icons/camera.png" class="p-4 rounded-4"
+                      style="background-color: #5E5E5E;" alt="camera icon">
+                    <div>
+                      <p class="explore-title">網路行銷</p>
+                      <span class="fs-8">342 門課程</span>
+                    </div>
+                  </a>
+                </div>
+                <!-- slide 3 -->
+                <div class="swiper-slide">
+                  <a href="#" class="explore-link">
+                    <img src="../assets/images/icons/chartBarHorizontal.png" class="p-4 rounded-4"
+                      style="background-color: #FF9BAD;" alt="chartBarHorizontal icon">
+                    <div>
+                      <p class="explore-title">網路行銷</p>
+                      <span class="fs-8">342 門課程</span>
+                    </div>
+                  </a>
+                </div>
+                <!-- slide 4 -->
+                <div class="swiper-slide">
+                  <a href="#" class="explore-link">
+                    <img src="../assets/images/icons/penNib.png" class="p-4 rounded-4"
+                      style="background-color: #564FFD;" alt="penNib icon">
+                    <div>
+                      <p class="explore-title">網路行銷</p>
+                      <span class="fs-8">342 門課程</span>
+                    </div>
+                  </a>
+                </div>
+                <!-- slide 5 -->
+                <div class="swiper-slide">
+                  <a href="#" class="explore-link">
+                    <img src="../assets/images/icons/bugDroid.png" class="p-4 rounded-4"
+                      style="background-color: #54DFF2;" alt="bugDroid icon">
+                    <div>
+                      <p class="explore-title">網路行銷</p>
+                      <span class="fs-8">342 門課程</span>
+                    </div>
+                  </a>
+                </div>
+                <!-- slide 6 -->
+                <div class="swiper-slide">
+                  <a href="#" class="explore-link">
+                    <img src="../assets/images/icons/creditCard.png" class="p-4 rounded-4"
+                      style="background-color: #52E9BC;" alt="creditCard icon">
+                    <div>
+                      <p class="explore-title">網路行銷</p>
+                      <span class="fs-8">342 門課程</span>
+                    </div>
+                  </a>
+                </div>
+                <!-- slide 7 -->
+                <div class="swiper-slide">
+                  <a href="#" class="explore-link">
+                    <img src="../assets/images/icons/headphones.png" class="p-4 rounded-4"
+                      style="background-color: #CF93FF;" alt="headphones icon">
+                    <div>
+                      <p class="explore-title">網路行銷</p>
+                      <span class="fs-8">342 門課程</span>
+                    </div>
+                  </a>
+                </div>
+                <!-- slide 8 -->
+                <div class="swiper-slide">
+                  <a href="#" class="explore-link">
+                    <img src="../assets/images/icons/arrow.png" class="p-4 rounded-4 bg-primary" alt="arrow icon">
+                    <div>
+                      <p class="explore-title">網路行銷</p>
+                      <span class="fs-8">342 門課程</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 頂尖講師帶你飛 -->
+    <section class="teacher mt-13 mb-15 my-lg-15">
+      <div class="container ">
+        <div class="text-lg-center mb-lg-9">
+          <h3 class="h1 fw-bold fw-md-semibold mb-2"><span class="title-deco">頂尖講師<br class="d-lg-none">帶你飛</span>
+          </h3>
+          <p class="fs-6 fs-lg-7 mb-6 mb-lg-9">超真實學員評價，這些講師你絕對不能錯過！</p>
+        </div>
+        <div class="row">
+          <div class="col pb-7 overflow-x-hidden ">
+            <!-- teacher swiper  -->
+            <div class="position-relative">
+              <div class="swiper teacher-swiper overflow-visible">
+                <div class="swiper-wrapper">
+                  <!-- teacher slide 1  -->
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <img src="../assets/images/teacher-1.png" class="card-img-top" alt="teacher-1">
+                      <div class="card-body">
+                        <h5 class="card-title">Mr. Robert </h5>
+                        <div class="d-flex align-items-center gap-2 fs-8 mb-2">
+                          <span class="badge text-bg-neutral-40 position-static m-0">音樂創作</span>
+                          <p class="d-flex align-items-center gap-1">
+                            <span class="material-symbols-outlined icon-filled icon-star">star</span>
+                            <span class="text-black fw-medium">4.0</span>
+                            <span>(333)</span>
+                          </p>
+                        </div>
+                        <p class="card-text mb-6">Robert 的線上課程深受學生喜愛。他的教學方法生動有趣，能夠深入淺出地講解複雜的音樂理論，並結合實際演奏技巧，使學生能夠快速進步。
+                        </p>
+                        <a href="#" class="btn btn-primary w-100 px-0">探索 Mr. Robert 的教學課程</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- teacher slide 2  -->
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <img src="../assets/images/teacher-2.png" class="card-img-top" alt="teacher-2">
+                      <div class="card-body">
+                        <h5 class="card-title">Kelly Beck</h5>
+                        <div class="d-flex align-items-center gap-2 fs-8 mb-2">
+                          <span class="badge text-bg-neutral-40 position-static m-0">英文寫作</span>
+                          <p class="d-flex align-items-center gap-1">
+                            <span class="material-symbols-outlined icon-filled icon-star">star</span>
+                            <span class="text-black fw-medium">4.8</span>
+                            <span>(281)</span>
+                          </p>
+                        </div>
+                        <p class="card-text mb-6">Kelly 的教學方式靈活且富有創意，能夠有效提升學生的寫作技巧和自信心。Kelly 注重實用性，針對學生的需求量身打造教學內容，並提供具體的反饋和建議。
+                        </p>
+                        <a href="#" class="btn btn-primary w-100 px-0">探索 Kelly Beck 的教學課程</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- teacher slide 3  -->
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <img src="../assets/images/teacher-3.png" class="card-img-top" alt="teacher-3">
+                      <div class="card-body">
+                        <h5 class="card-title">K. Lee</h5>
+                        <div class="d-flex align-items-center gap-2 fs-8 mb-2">
+                          <span class="badge text-bg-neutral-40 position-static m-0">音樂創作</span>
+                          <p class="d-flex align-items-center gap-1">
+                            <span class="material-symbols-outlined icon-filled icon-star">star</span>
+                            <span class="text-black fw-medium">4.0</span>
+                            <span>(1,245)</span>
+                          </p>
+                        </div>
+                        <p class="card-text mb-6">K. Lee 的教學風格親切且耐心，能夠循序漸進地引導學生進入樂團的世界。學生們紛紛表示，K. Lee 的課程讓他們對音樂產生了濃厚的興趣！
+                        </p>
+                        <a href="#" class="btn btn-primary w-100 px-0">探索 K. Lee 的教學課程</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <%- include('./layout/footer'); -%>
 
       <script type="module" src="../main.js"></script>
@@ -258,11 +640,82 @@
           breakpoints: {
             768: {
               slidesPerView: 2,
+              grid: {
+                rows: 1,
+                fill: 'row',
+              },
             },
             992: {
               slidesPerView: 2,
               grid: {
                 rows: 2,
+              },
+            },
+          }
+        });
+        // teacher swiper 
+        var swiper = new Swiper(".teacher-swiper", {
+          slidesPerView: 1,
+          spaceBetween: 24,
+          grid: {
+            rows: 1,
+            fill: 'row',
+          },
+          pagination: {
+            el: ".teacher .swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            992: {
+              slidesPerView: 3,
+            },
+          }
+        });
+        // explore swiper 
+        var swiper = new Swiper(".explore-swiper", {
+          slidesPerView: 1,
+          spaceBetween: 24,
+          loop: "true",
+          grid: {
+            rows: 2,
+            fill: 'row',
+          },
+          breakpoints: {
+            992: {
+              slidesPerView: 2,
+              grid: {
+                rows: 4,
+                fill: 'row',
+              },
+            },
+          }
+        });
+        // popular
+        var swiper = new Swiper(".popular-swiper", {
+          slidesPerView: 1.1,
+          spaceBetween: 24,
+          loop: "true",
+          grid: {
+            rows: 1,
+            fill: 'row',
+          },
+          navigation: {
+            nextEl: ".popular .swiper-button-next",
+            prevEl: ".popular .swiper-button-prev",
+          },
+          breakpoints: {
+            768: {
+              slidesPerView: 2.2,
+              grid: {
+                rows: 1,
+                fill: 'row',
+              },
+            },
+            1200: {
+              slidesPerView: 4,
+              grid: {
+                rows: 1,
+                fill: 'row',
               },
             },
           }

@@ -24,13 +24,3 @@
 .form-select:focus-visible{
   border-color: green;
 }
-.dropdown-toggle::after{
-  // content: "\F286";
-  // font-family: "Bootstrap-icons";
-  // border: none;
-  // vertical-align: middle;
-}
-.dropdown-toggle.show::after{
-  // transform: rotate(180deg);
-  // color: black;
-}

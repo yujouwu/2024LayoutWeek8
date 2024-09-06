@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>講師介紹</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <section class="teacher-intro">
+      <div class=" position-relative">
+        <picture>
+          <source srcset="../assets/images/hero-5.png" media="(min-width: 992px)">
+          <img class="w-100" src="../assets/images/hero-sm-5.png" alt="banner 形象圖">
+        </picture>
+        <div class="bg-white p-3 rounded-circle position-absolute start-50 top-100 translate-middle">
+          <picture>
+            <source srcset="../assets/images/hexschool-logo.png" media="(min-width: 992px)">
+            <img class="" src="../assets/images/hexschool-logo-sm.png" alt="hexschool logo">
+          </picture>
+        </div>
+      </div>
+      <div class="container">
+        <div class="d-flex flex-column gap-4">
+          <h2 class="h1 mt-12 mb-4 text-center">六角學院</h2>
+          <ul class="list-unstyled d-flex py-3 justify-content-center">
+            <li class="px-4"><span class="text-primary fw-semibold me-1">4</span>堂課</li>
+            <li class="text-neutral-60">|</li>
+            <li class="line-deco px-4"><span class="text-primary fw-semibold me-1">8463</span>收藏數</li>
+            <li class="text-neutral-60">|</li>
+            <li class="px-4"><span class="text-primary fw-semibold me-1">20,218</span>個學生</li>
+          </ul>
+          <p>六角學院 是一所線上程式開發學習單位，目前已累積 20,000 名學員，讓更多人藉由線上學習在職涯規劃上有更多的選擇是我們的使命是，如果您贊同我們的理念，歡迎加入六角。
+            我們將深入了解您想發展的領域，每位實習生我們都會量身打造專屬於您的舞台，並讓您實際瞭解公司營運 Know how。</p>
+          <ul class="list-unstyled d-flex gap-4 mb-7 justify-content-center">
+            <li><a href="#"><img src="../assets/images/icons/btn_line_dark.png" alt="line icon"></a></li>
+            <li><a href="#"><img src="../assets/images/icons/btn_yt_dark.png" alt="line icon"></a></li>
+            <li><a href="#"><img src="../assets/images/icons/btn_fb_dark.png" alt="line icon"></a></li>
+          </ul>
+        </div>
+        <div class="d-flex align-items-center">
+          <picture>
+            <source srcset="../assets/images/deco/flower-5.png" media="(min-width: 992px)">
+            <img class="" src="../assets/images/deco/flower-5-sm.png" alt="hexschool logo">
+          </picture>
+          <h5>
+            六角學院開的課
+          </h5>
+        </div>
+        <div class="row">
+          <div class="col position-relative">
+            <!-- hexschool Swiper -->
+            <div class="swiper hexschool-swiper">
+              <div class="swiper-wrapper">
+                <!-- hexschool slide 1 -->
+                <div class="swiper-slide">
+                  <a href="#" class="text-decoration-none">
+                    <div class="card">
+                      <img src="../assets/images/course-1.png" class="card-img-top" alt="course-1">
+                      <span class="badge badge-danger">限時 8 折 🔥</span>
+                      <div class="card-body p-4">
+                        <h6 class="card-title">創意寫作工坊：從靈感到出版的全過程</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="d-flex align-items-center">
+                            <img class="avatar" src="../assets/images/avatar-1.png" alt="avatar-1">
+                            <h4 class="fs-7 fw-normal">Kelly Hsu</h4>
+                          </div>
+                          <div class="text-end">
+                            <h6 class="text-primary">NT$ 2,480</h6>
+                            <span>NT$ 3,200</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer d-flex align-items-center justify-content-between fs-8 p-4">
+                        <div>
+                          <span class="badge text-bg-neutral-40 position-static m-0 mb-1">中文創作</span>
+                          <p class="text-neutral-80 fs-8">已有 521 位同學加入</p>
+                        </div>
+                        <p class="d-flex align-items-center gap-1">
+                          <span class="material-symbols-outlined icon-filled icon-star">star</span>
+                          <span class="text-black fw-medium">4.0</span>
+                          <span>(333)</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- hexschool slide 2 -->
+                <div class="swiper-slide">
+                  <a href="#" class="text-decoration-none">
+                    <div class="card">
+                      <img src="../assets/images/course-5.png" class="card-img-top" alt="course-5">
+                      <span class="badge badge-danger">限時 8 折 🔥</span>
+                      <div class="card-body p-4">
+                        <h6 class="card-title">小白也會！從零開始學習 Python 程式設計</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="d-flex align-items-center">
+                            <img class="avatar" src="../assets/images/avatar-1.png" alt="avatar-1">
+                            <h4 class="fs-7 fw-normal">Kelly Hsu</h4>
+                          </div>
+                          <div class="text-end">
+                            <h6 class="text-primary">NT$ 2,480</h6>
+                            <span>NT$ 3,200</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer d-flex align-items-center justify-content-between fs-8 p-4">
+                        <div>
+                          <span class="badge text-bg-neutral-40 position-static m-0 mb-1">程式開發</span>
+                          <p class="text-neutral-80 fs-8">已有 420 位同學加入</p>
+                        </div>
+                        <p class="d-flex align-items-center gap-1">
+                          <span class="material-symbols-outlined icon-filled icon-star">star</span>
+                          <span class="text-black fw-medium">4.0</span>
+                          <span>(333)</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- hexschool slide 3 -->
+                <div class="swiper-slide">
+                  <a href="#" class="text-decoration-none">
+                    <div class="card">
+                      <img src="../assets/images/course-6.png" class="card-img-top" alt="course-6">
+                      <span class="badge badge-danger">限時 8 折 🔥</span>
+                      <div class="card-body p-4">
+                        <h6 class="card-title">全面掌握 JavaScript 開發技術</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="d-flex align-items-center">
+                            <img class="avatar" src="../assets/images/avatar-1.png" alt="avatar-1">
+                            <h4 class="fs-7 fw-normal">Kelly Hsu</h4>
+                          </div>
+                          <div class="text-end">
+                            <h6 class="text-primary">NT$ 2,480</h6>
+                            <span>NT$ 3,200</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer d-flex align-items-center justify-content-between fs-8 p-4">
+                        <div>
+                          <span class="badge text-bg-neutral-40 position-static m-0 mb-1">程式開發</span>
+                          <p class="text-neutral-80 fs-8">已有 420 位同學加入</p>
+                        </div>
+                        <p class="d-flex align-items-center gap-1">
+                          <span class="material-symbols-outlined icon-filled icon-star">star</span>
+                          <span class="text-black fw-medium">4.0</span>
+                          <span>(333)</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- hexschool slide 4 -->
+                <div class="swiper-slide">
+                  <a href="#" class="text-decoration-none">
+                    <div class="card">
+                      <img src="../assets/images/course-7.png" class="card-img-top" alt="course-7">
+                      <div class="card-body p-4">
+                        <h6 class="card-title">HTML & CSS 網頁設計基礎教程</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="d-flex align-items-center">
+                            <img class="avatar" src="../assets/images/avatar-1.png" alt="avatar-1">
+                            <h4 class="fs-7 fw-normal">Kelly Hsu</h4>
+                          </div>
+                          <div class="text-end">
+                            <h6 class="text-primary">NT$ 2,480</h6>
+                            <span>NT$ 3,200</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer d-flex align-items-center justify-content-between fs-8 p-4">
+                        <div>
+                          <span class="badge text-bg-neutral-40 position-static m-0 mb-1">程式開發</span>
+                          <p class="text-neutral-80 fs-8">已有 420 位同學加入</p>
+                        </div>
+                        <p class="d-flex align-items-center gap-1">
+                          <span class="material-symbols-outlined icon-filled icon-star">star</span>
+                          <span class="text-black fw-medium">4.0</span>
+                          <span>(333)</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+      <!-- font awesome -->
+      <script src="https://kit.fontawesome.com/95851d8e4d.js" crossorigin="anonymous"></script>
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <!-- Initialize Swiper -->
+      <script>
+        // popular
+        var swiper = new Swiper(".hexschool-swiper", {
+          slidesPerView: 1.1,
+          spaceBetween: 24,
+          loop: "true",
+          grid: {
+            rows: 1,
+            fill: 'row',
+          },
+          breakpoints: {
+            768: {
+              slidesPerView: 2.2,
+              grid: {
+                rows: 1,
+                fill: 'row',
+              },
+            },
+            1200: {
+              slidesPerView: 4,
+              grid: {
+                rows: 1,
+                fill: 'row',
+              },
+            },
+          }
+        });
+      </script>
+</body>
+
+</html>

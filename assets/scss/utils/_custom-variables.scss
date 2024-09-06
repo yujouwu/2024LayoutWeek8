@@ -1465,13 +1465,15 @@ $card-title-color:                  null !default;
 $card-subtitle-color:               null !default;
 $card-border-width:                 var(--#{$prefix}border-width) !default;
 $card-border-color:                 var(--#{$prefix}border-color-translucent) !default;
-$card-border-radius:                var(--#{$prefix}border-radius) !default;
+// $card-border-radius:                var(--#{$prefix}border-radius) !default;
+$card-border-radius:                12px !default;  // *custom
 // $card-box-shadow:                   null !default;
 $card-box-shadow:                   0px 25px 50px -12px #0000001F !default;  // *custom
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;
 $card-cap-padding-x:                $card-spacer-x !default;
-$card-cap-bg:                       rgba(var(--#{$prefix}body-color-rgb), .03) !default;
+// $card-cap-bg:                       rgba(var(--#{$prefix}body-color-rgb), .03) !default;
+$card-cap-bg:                       transparent !default;  // *custom
 $card-cap-color:                    null !default;
 $card-height:                       null !default;
 $card-color:                        null !default;
@@ -1606,12 +1608,16 @@ $toast-header-border-color:         $toast-border-color !default;
 // Badges
 
 // scss-docs-start badge-variables
-$badge-font-size:                   .75em !default;
+// $badge-font-size:                   .75em !default;
+$badge-font-size:                   1em !default;  // *custom
 $badge-font-weight:                 $font-weight-bold !default;
 $badge-color:                       $white !default;
-$badge-padding-y:                   .35em !default;
-$badge-padding-x:                   .65em !default;
-$badge-border-radius:               var(--#{$prefix}border-radius) !default;
+// $badge-padding-y:                   .35em !default;
+$badge-padding-y:                   .5em !default;  // *custom
+// $badge-padding-x:                   .65em !default;
+$badge-padding-x:                   .75em !default;  // *custom
+// $badge-border-radius:               var(--#{$prefix}border-radius) !default;
+$badge-border-radius:               100px !default;  // *custom
 // scss-docs-end badge-variables
 
 
