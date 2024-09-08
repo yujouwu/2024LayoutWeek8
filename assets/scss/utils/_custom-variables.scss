@@ -446,7 +446,8 @@ $enable-button-pointers:      true !default;
 // $enable-rfs:                  true !default;
 $enable-rfs:                  false !default;  // *custom
 $enable-validation-icons:     true !default;
-$enable-negative-margins:     false !default;
+// $enable-negative-margins:     false !default;
+$enable-negative-margins:     true !default;  // *custom
 $enable-deprecation-messages: true !default;
 $enable-important-utilities:  true !default;
 
@@ -489,6 +490,7 @@ $spacers: (
   4: $spacer,         // 16px *custom
   5: $spacer * 1.25,  // 20px *custom
   6: $spacer * 1.5,   // 24px *custom
+  '6-5': $spacer * 1.875,   // 30px *custom
   7: $spacer * 2,     // 32px *custom
   8: $spacer * 2.25,  // 36px *custom
   9: $spacer * 2.5,   // 40px *custom
@@ -498,6 +500,7 @@ $spacers: (
   13: $spacer * 5,    // 80px *custom
   14: $spacer * 6.25, // 100px *custom
   15: $spacer * 7.5,  // 120px *custom
+  16: $spacer * 10,  // 160px *custom
 
 ) !default;
 // scss-docs-end spacer-variables-maps
@@ -962,7 +965,8 @@ $btn-link-disabled-color:     $gray-600 !default;
 $btn-link-focus-shadow-rgb:   to-rgb(mix(color-contrast($link-color), $link-color, 15%)) !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius:           var(--#{$prefix}border-radius) !default;
+// $btn-border-radius:           var(--#{$prefix}border-radius) !default;
+$btn-border-radius:           12px !default;  // *custom
 $btn-border-radius-sm:        var(--#{$prefix}border-radius-sm) !default;
 $btn-border-radius-lg:        var(--#{$prefix}border-radius-lg) !default;
 
@@ -1463,7 +1467,8 @@ $card-spacer-x:                     $spacer !default;
 $card-title-spacer-y:               $spacer * .5 !default;
 $card-title-color:                  null !default;
 $card-subtitle-color:               null !default;
-$card-border-width:                 var(--#{$prefix}border-width) !default;
+// $card-border-width:                 var(--#{$prefix}border-width) !default;
+$card-border-width:                 0 !default;  // *custom
 $card-border-color:                 var(--#{$prefix}border-color-translucent) !default;
 // $card-border-radius:                var(--#{$prefix}border-radius) !default;
 $card-border-radius:                12px !default;  // *custom

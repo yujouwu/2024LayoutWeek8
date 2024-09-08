@@ -20,5 +20,29 @@ $utilities: map-merge(
       map-get($utilities, "overflow"),
       ( responsive: true ),
     ),
+    "start": map-merge(
+      map-get($utilities, "start"),
+      ( responsive: true ),
+    ),
+    "width": map-merge(
+      map-get($utilities, "width"),
+      ( responsive: true,
+        property: width,
+        class: w,
+        values: map-merge(
+          map-get(map-get($utilities, "width"), "values"), (
+            "fit-content": fit-content,
+          )
+        )
+      ),
+    ),
+    "translate-middle": map-merge(
+      map-get($utilities, "translate-middle"),
+      ( responsive: true, 
+        values: (
+          "x-0": translateY(0%),
+        )
+      ),
+    ),
   )
 );

@@ -3,7 +3,7 @@
       <!-- logo、探索 (桌機)、搜尋按鈕 (桌機) -->
       <div class="d-flex align-items-center">
         <!-- logo  -->
-        <a class="navbar-brand me-2 me-xl-6" href="#">
+        <a class="navbar-brand me-2 me-xl-6" href="index.html">
           <img src="../assets/images/logo.png" class="img-fluid" alt="logo">
         </a>
         <!-- 探索、搜尋欄位 (桌機) -->
@@ -148,7 +148,7 @@
         <!-- 鈴鐺、購物車 -->
         <ul class="list-unstyled d-flex align-items-center gap-xl-4">
           <li>
-            <button type="button" class="btn py-2 px-3 ">
+            <button type="button" class="btn py-2 px-3 shadow-none">
               <span class="material-symbols-outlined position-relative">
                 notifications
                 <span
@@ -159,7 +159,7 @@
             </button>
           </li>
           <li>
-            <button type="button" class="btn py-2 px-3 ">
+            <button type="button" class="btn py-2 px-3 shadow-none">
               <div class="position-relative">
                 <span class="material-symbols-outlined ">
                   shopping_cart
@@ -170,11 +170,11 @@
             </button>
           </li>
           <li class="d-none d-xl-block">
-            <button class="btn btn-primary" type="submit">登入 / 註冊</button>
+            <a href="login.html" class="btn btn-primary" role="button">登入 / 註冊</a>
           </li>
         </ul>
         <!-- 漢堡選單 -->
-        <button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        <button class="navbar-toggler p-2 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -185,7 +185,11 @@
           <div class="mobile-nav-dropdown-menu">
             <!-- 選單第一層 (手機) -->
             <ul class="list-unstyled dropdown-menu-level-one ">
-              <li><a class="dropdown-item dropdown-item-all mb-2" href="#">探索全部</a></li>
+              <!-- <li class="d-flex justify-content-between align-items-center mb-2"> -->
+              <li class="offcanvas-header">
+                <p class="offcanvas-title" id="offcanvasLabel">探索全部</p>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </li>
               <li><a class="dropdown-item" href="#">音樂</a></li>
               <li>
                 <a 
@@ -217,7 +221,7 @@
             </ul>
           </div>
           <div class="border-top py-3 px-6 position-absolute bottom-0 w-100">
-            <button class="btn btn-primary w-100" type="submit">登入 / 註冊</button>
+            <a href="login.html" class="btn btn-primary w-100" role="button">登入 / 註冊</a>
           </div>
         </div>
       </div>
