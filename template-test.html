@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="module" crossorigin src="/2024LayoutWeek8/assets/main-61a18a1e.js"></script>
+  <link rel="stylesheet" href="/2024LayoutWeek8/assets/main-ab19dd0b.css">
+</head>
+<body>
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+      data-bs-auto-close="outside">
+      Dropdown button
+    </button>
+    <ul class="dropdown-menu">
+      <li class="dropend">
+        <a class="dropdown-item" href="#" data-bs-toggle="dropdown">
+          Action
+        </a>
+        <div class="dropdown">
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div>
+  <h1 class="index-title">我是首頁</h1>
+  <button type="button" class="btn btn-success">BUTTON</button>
+  <button type="button" class="btn btn-primary">BUTTON</button>
+  <button type="button" class="btn btn-primary" disabled>disabled</button>
+  <button type="button" class="btn btn-outline-primary">Secondary</button>
+  <button type="button" class="btn btn-outline-primary" disabled>Secondary disabled</button>
+  <br>
+  <button type="button" class="btn btn-success btn-sm">BUTTON</button>
+  <button type="button" class="btn btn-primary btn-sm">BUTTON</button>
+  <button type="button" class="btn btn-primary btn-sm" disabled>disabled</button>
+  <button type="button" class="btn btn-outline-primary btn-sm">Secondary</button>
+  <button type="button" class="btn btn-outline-primary btn-sm" disabled>Secondary disabled</button>
+  <h2>火熱募資課程</h2>
+  <p class="fs-8">TEST</p>
+  <!-- google icons -->
+  <ul class="list-unstyled d-flex">
+    <li><span class="material-symbols-outlined">check</span></li>
+    <li><span class="material-symbols-outlined">chevron_left</span></li>
+    <li><span class="material-symbols-outlined">chevron_right</span></li>
+    <li><span class="material-symbols-outlined icon-filled">folder</span></li>
+  </ul>
+  <!-- bootstrap icons -->
+  <ul class="list-unstyled d-flex">
+    <li><i class="bi bi-share-fill"></i></li>
+    <li><i class="bi bi-bookmark-fill"></i></li>
+    <li><i class="bi bi-camera-video"></i></li>
+    <li><i class="bi bi-book"></i></li>
+  </ul>
+  <!-- form  -->
+  <form class="needs-validation" novalidate>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <!-- validation  -->
+    <div class="col-md-6">
+      <label for="validationCustom03" class="form-label">City</label>
+      <input type="text" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <!-- dropdown，是 dropdown 還是 select ??? -->
+  <div class="bg-neutral-40 p-3">
+    <div class="dropdown">
+      <button class="btn bg-white dropdown-toggle p-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- select 發票選項 ??? 還是是 dropdown ? -->
+  <p>發票類型</p>
+  <select class="form-select" aria-label="Default select example">
+    <option selected>Open this select menu</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+  <div class="card" style="width: 18rem">
+    <img src="/2024LayoutWeek8/assets/teacher-3-8d68dd20.png" class="card-img-top" alt="cat" />
+    <div class="card-body">
+      <h5 class="card-title">卡片元件</h5>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
+        nobis earum!
+      </p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem">
+    <img src="/2024LayoutWeek8/assets/cat-0c0689ae.jpg" class="card-img-top" alt="cat" />
+    <div class="card-body">
+      <h5 class="card-title">卡片元件</h5>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
+        nobis earum!
+      </p>
+    </div>
+  </div>
+  <!-- tab title  -->
+  <!-- tab item  -->
+
+  <!-- Modal 按鈕 -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    打開 modal
+  </button>
+
+  <!-- Modal 元件 -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">內容</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+          <button type="button" class="btn btn-primary">確定</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
